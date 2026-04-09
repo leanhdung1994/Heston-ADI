@@ -103,7 +103,7 @@ All parameters are set in `main.py` via the `Config` dataclass:
 | `r_d`     | 0.01    | Domestic interest rate |
 | `r_f`     | 0.06    | Foreign interest rate |
 | `K`       | 100.0   | Strike price |
-| `T`       | 4.0     | Maturity (years) |
+| `T`       | 4.0     | Maturity |
 | `m_1`     | 100     | Grid points in s-direction |
 | `m_2`     | 50      | Grid points in v-direction |
 | `N`       | 50      | Number of time steps |
