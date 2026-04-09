@@ -18,7 +18,34 @@ d\langle W^1, W^2\rangle_t & = \rho\,dt
 \end{aligned}
 $$
 
-By the Feynman–Kac formula, the fair price $u(t,s,v)$ satisfies a 2D parabolic PDE on $[0,T]\times[0,S_\mathrm{max}]\times[0,V_\mathrm{max}]$. This PDE is solved numerically by:
+By the Feynman–Kac formula, the fair price $u(t,s,v)$ satisfies a 2D parabolic PDE on $[0,T]\times[0,S_\mathrm{max}]\times[0,V_\mathrm{max}]$:
+
+$$
+\begin{aligned}
+\partial_t u & = - r_d u + \alpha \cdot \nabla_x u + \frac{1}{2} \beta : \nabla_x^2 u , \\
+u(0, s, v)   & = \phi (s) ,
+\end{aligned}
+$$
+
+where $\phi (s) = \max(s-K,0)$ and
+
+$$
+\begin{aligned}
+	\alpha (t, s, v) & =
+	\begin{bmatrix}
+		(r_d-r_f)s \\
+		\kappa (\eta-v)
+	\end{bmatrix} , \\
+	\beta (t, s, v)  & =
+	\begin{bmatrix}
+		vs^2            & \rho \sigma v s \\
+		\rho \sigma v s & \sigma^2 v
+	\end{bmatrix} .
+\end{aligned}
+$$
+
+
+This PDE is solved numerically by:
 
 1. **Non-uniform mesh generation** — hyperbolic-sine grids concentrated near the strike $K$ (in $s$) and near $v = 0$.
 2. **Finite-difference semi-discretisation** — second-order schemes on non-uniform grids, with a unified treatment of all boundary points.
