@@ -158,10 +158,10 @@ The semi-discrete ODE $U' = (A_0 + A_1 + A_2)U + (g_0 + g_1 + g_2)$ is advanced 
 $$
 \begin{aligned}
 Y_0             & = U_{n-1} + \Delta t F(t_{n-1}, U_{n-1}) ,   \\
-Y_j             & = Y_{j-1} + \theta \Delta t [ F_j(t_n, Y_j) - F_j(t_{n-1}, U_{n-1}) ] \text{for} j=1,2 ,  \\
+Y_j             & = Y_{j-1} + \theta \Delta t [ F_j(t_n, Y_j) - F_j(t_{n-1}, U_{n-1}) ] \quad \text{for} \quad j=1,2 ,  \\
 \widehat{Y}_0   & = Y_0 + \theta \Delta t [ F_0(t_n, Y_2) - F_0(t_{n-1}, U_{n-1}) ] ,  \\
 \widetilde{Y}_0 & = \widehat{Y}_0 + \Big ( \frac{1}{2} - \theta \Big ) \Delta t [ F(t_n, Y_2) - F(t_{n-1}, U_{n-1}) ] ,  \\
-\widetilde{Y}_j & = \widetilde{Y}_{j-1} + \theta \Delta t [ F_j(t_n, \widetilde{Y}_j) - F_j(t_{n-1}, U_{n-1})] \text{for} j=1,2 ,  \\
+\widetilde{Y}_j & = \widetilde{Y}_{j-1} + \theta \Delta t [ F_j(t_n, \widetilde{Y}_j) - F_j(t_{n-1}, U_{n-1})] \quad \text{for} \quad j=1,2 ,  \\
 U_n             & =\widetilde{Y}_2 ,
 \end{aligned}
 $$
