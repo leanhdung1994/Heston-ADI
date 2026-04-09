@@ -9,6 +9,7 @@ The mathematical background is documented in [`Heston_ADI.pdf`](./Heston_ADI.pdf
 ## Overview
 
 The Heston model drives the asset price $S_t$ and variance $V_t$ jointly:
+
 $$
 \begin{aligned}
 dS_t & = (r_d - r_f)\,S_t\,dt + \sqrt{V_t}\,S_t\,dW^1_t, \\
