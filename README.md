@@ -38,12 +38,16 @@ This avoids compatibility issues at $t=0$ and allows every grid point — bounda
 
 Option price and Greeks for the default parameters:
 
-<center>
-<img src="plots/Option.png" width=50%>
-<img src="plots/Delta.png" width=50%>
-<img src="plots/Vega.png" width=50%>
-<img src="plots/Gamma.png" width=50%>
-</center>
+<p align="center">
+  <img alt="Light" src="./plots/Option.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="./plots/Delta.png" width="45%">
+</p>
+<p align="center">
+  <img alt="Light" src="./plots/Vega.png" width="45%">
+&nbsp; &nbsp; &nbsp; &nbsp;
+  <img alt="Dark" src="./plots/Gamma.png" width="45%">
+</p>
 
 ---
 
