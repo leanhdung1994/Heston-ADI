@@ -54,7 +54,9 @@ This PDE is solved numerically by:
 
 Rather than imposing Dirichlet conditions $u(t,0,v)=0$ and $u(t,s,V_\mathrm{max})=se^{-r_f t}$ directly (which conflict with the payoff at $t=0$), the solver enforces their **time-derivative equivalents**:
 
-$$\partial_t u(t,0,v) = 0, \qquad \partial_t u(t,s,V_\mathrm{max}) = -r_f\,s\,e^{-r_f t}$$
+$$
+\partial_t u(t,0,v) = 0 \quad \text{and} \quad \partial_t u(t,s,V_\mathrm{max}) = -r_f\,s\,e^{-r_f t} .
+$$
 
 This avoids compatibility issues at $t=0$ and allows every grid point — boundary or interior — to be treated uniformly as an unknown.
 
