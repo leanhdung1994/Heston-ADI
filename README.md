@@ -2,7 +2,7 @@
 
 Numerical solver for European call options under the **Heston stochastic volatility model**, using the **Modified Craig–Sneyd (MCS) Alternating Direction Implicit (ADI)** scheme.
 
-The mathematical background is documented in [`Heston_ADI.pdf`](./Heston_ADI.pdf).
+The mathematical derivation is documented in [`Heston_ADI.pdf`](./Heston_ADI.pdf).
 
 ---
 
