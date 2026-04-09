@@ -27,21 +27,20 @@ u(0, s, v)   & = \phi (s) ,
 \end{aligned}
 $$
 
-where $\phi (s) = \max(s-K,0)$ and
+where the initial condition is $\phi (s) = \max(s-K,0)$ and
 
 $$
-\begin{aligned}
-	\alpha (t, s, v) & =
+	\alpha (t, s, v) =
 	\begin{bmatrix}
 		(r_d-r_f)s \\
 		\kappa (\eta-v)
-	\end{bmatrix} , \\
-	\beta (t, s, v)  & =
+	\end{bmatrix} 
+	\quad \text{and} \quad
+	\beta (t, s, v)  =
 	\begin{bmatrix}
 		vs^2            & \rho \sigma v s \\
 		\rho \sigma v s & \sigma^2 v
 	\end{bmatrix} .
-\end{aligned}
 $$
 
 
