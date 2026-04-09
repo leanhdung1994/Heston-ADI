@@ -50,7 +50,9 @@ This PDE is solved numerically by:
 2. **Finite-difference semi-discretisation** — second-order schemes on non-uniform grids, with a unified treatment of all boundary points.
 3. **MCS ADI time-stepping** — second-order, unconditionally stable splitting scheme with $\theta = \tfrac{1}{3}$.
 
-### Key design choice
+---
+
+## Key design choice
 
 Rather than imposing Dirichlet conditions $u(t,0,v)=0$ and $u(t,s,V_\mathrm{max})=se^{-r_f t}$ directly (which conflict with the payoff at $t=0$), the solver enforces their **time-derivative equivalents**:
 
