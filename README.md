@@ -18,7 +18,7 @@ d\langle W^1, W^2\rangle_t & = \rho\,dt
 \end{aligned}
 $$
 
-By the Feynman–Kac formula, the fair price $u(t,s,v)$ satisfies a 2D parabolic PDE on $[0,T]\times[0,S_\mathrm{max}]\times[0,V_\mathrm{max}]$:
+By the Feynman–Kac formula, the fair price $u(t,s,v)$ satisfies a 2D partial differential equation (PDE) on $[0,T]\times[0,S_\mathrm{max}]\times[0,V_\mathrm{max}]$:
 
 $$
 \begin{aligned}
