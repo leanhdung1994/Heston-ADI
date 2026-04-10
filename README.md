@@ -168,7 +168,6 @@ $$
 
 The splitting assigns $A_0$ to the mixed derivative $\partial^2_{sv}$, $A_1$ to $s$-direction terms, and $A_2$ to $v$-direction terms. The two implicit systems $(I - \theta\Delta t A_1)$ and $(I - \theta\Delta t A_2)$ are LU-factored once and reused every step.
 
-
 ---
 
 ## References
@@ -176,3 +175,9 @@ The splitting assigns $A_0$ to the mixed derivative $\partial^2_{sv}$, $A_1$ to 
 - Heston, S. L. (1993). *A Closed-Form Solution for Options with Stochastic Volatility*. Review of Financial Studies, 6(2), 327–343.
 - in 't Hout, K. J., & Foulon, S. (2010). *ADI finite difference schemes for option pricing in the Heston model with correlation*. International Journal of Numerical Analysis & Modeling, 7(2).
 - Ekström, E., & Tysk, J. (2010). *The Black–Scholes equation in stochastic volatility models*. Journal of Mathematical Analysis and Applications, 368(2), 498–507.
+
+---
+
+## Acknowledgement
+
+Many thanks to LE Quynh Anh for encouragement and support.
