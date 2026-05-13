@@ -25,7 +25,7 @@ class DerivativeMatrices:
 
     def _gen_first_derivative(self, direction):
         """
-        Build the (m+1)×(m+1) first-derivative matrix for the given direction:
+        Build the (m+1)x(m+1) first-derivative matrix for the given direction:
         - Row 0   (i=0):   forward  difference (3-point, one-sided)
         - Rows 1..m-1:     central  difference (3-point, centred)
         - Row m   (i=m):   backward difference (3-point, one-sided)
@@ -44,7 +44,7 @@ class DerivativeMatrices:
                 Delta_pp = _list[2] - _list[1]
                 Delta_p = _list[1] - _list[0]
                 gamma_0 = (-2 * Delta_p - Delta_pp) / (Delta_p * (Delta_p + Delta_pp))
-                gamma_1 = (Delta_p + Delta_pp) / ((Delta_p * Delta_pp))
+                gamma_1 = (Delta_p + Delta_pp) / (Delta_p * Delta_pp)
                 gamma_2 = -Delta_p / (Delta_pp * (Delta_p + Delta_pp))
                 res[0, [0, 1, 2]] = [gamma_0, gamma_1, gamma_2]
             elif i == m:

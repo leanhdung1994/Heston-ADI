@@ -6,7 +6,7 @@ class ForcingFactor:
     """
     Builds the time-dependent forcing matrices G¹, E¹, E¹¹ (Sections 5.1, 5.2).
 
-    All matrices have shape (m_1+1) × (m_2+1); only specific entries are non-zero.
+    All matrices have shape (m_1+1) x (m_2+1); only specific entries are non-zero.
     """
 
     def __init__(self, derivative_matrices: DerivativeMatrices):

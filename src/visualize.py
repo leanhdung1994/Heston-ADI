@@ -1,4 +1,3 @@
-from mesh_gen import MeshGen
 from greeks import ComputeGreeks
 import matplotlib.pyplot as plt
 import numpy as np
