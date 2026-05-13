@@ -9,3 +9,8 @@ dependencies = [
     "numpy>=2.4.4",
     "scipy>=1.17.1",
 ]
+
+[dependency-groups]
+dev = [
+    "zuban>=0.7.2",
+]
